@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>unreturned books</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/style.css" />
+    <link href="../css/materialicons.css" rel="stylesheet">
+    <link href="../css/fonts/font-awesome.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(../lib.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="javasscript:void(0);">Hello-Books</a>
+            </div>
+            <ul class="nav navbar-nav pull-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">View Profile</a></li>
+                        <li class="divider"></li>
+                        <li><a href="login.html">Logout</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <form class="navbar-form" action="/action_page.php">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-addon">
+                                <button class="btn btn-default btn-xs" type="submit">
+                                <i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </li>
+                
+            </ul>
+        </div>
+    </nav>
+    <div class="page-header">    
+        <h2>Books not Returned</h2>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Book Name</th>
+                <th>Book Number</th>
+                <th>Category</th>
+                <th>User</th>                                  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Chemistry</td>
+                <td>22</td>
+                <td>Science</td>
+                <td>Demo User</td>                
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>Mathematics</td>
+                <td>40</td>
+                <td>English</td>
+                <td>Demo User2</td>                
+            </tr>
+            </tbody>
+            <tbody>
+            <tr>
+                <td>Chemistry<br>Caculus</td>
+                <td>57<br>81</td>
+                <td>Science<br>Mathematics</td>
+                <td>Demo User3</td>                
+            </tbody>
+            <tbody>
+            <tr>
+                <td>Kiswahili<br>English Essentials<br>CRE Essentials</td>
+                <td>30<br>51<br>79</td>
+                <td>Science<br>English<br>CRE</td>
+                <td>Demo User4</td>                
+            </tr>
+            </tbody>
+    </table>
+
+</div>
+
+</body>
+
+<script src="../js/jquery-3.3.1.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+</html>
+
