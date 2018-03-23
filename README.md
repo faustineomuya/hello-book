@@ -5,7 +5,7 @@ Hello-book is a simple application that helps manage a library and its processes
 ## Frameworks used
 HTML and Bootstrap
 
-###Installation and hosting to Github Pages
+### Installation and hosting to Github Pages
 * Open terminal on  your local machine
 * Put in the command
   git clone https://github.com/faustineomuya/hello-book.git
