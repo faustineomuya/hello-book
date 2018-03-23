@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>add-book</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="css/materialicons.css" rel="stylesheet">
+    <link href="css/fonts/font-awesome.css" rel="stylesheet">
+    <style>
+        body{
+            background-image: url(lib.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="javasscript:void(0);">Hello-Books</a>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="">View Profile</a></li>
+                            <li class="divider"></li>
+                            <li><a href="login.html">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="navbar-form" action="/action_page.php">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-addon">
+                                    <button class="btn btn-default btn-xs" type="submit">
+                                    <i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    
+                </ul>
+            </div>
+        </nav><br>
+<div class="container">
+    <h2>Add Book Form</h2>
+    <hr>
+    <form action="" method="POST" class="form-horizontal">
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Book Name</label>
+            <div class="col-sm-6">
+                <input type="text" name="name" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Book Number</label>
+            <div class="col-sm-6">
+                <input type="number" name="number" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Description</label>
+            <div class="col-sm-6">
+                <textarea name="description" class="form-control"></textarea>
+            </div>
+        </div>
+        
+        
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Registration Date</label>
+            <div class="col-sm-6">
+                <input type="date" name="date" class="form-control">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label">Category</label>
+            <div class="col-sm-6">
+                <select name="category" class="form-control">
+                    <option value="academics">Academics</option>
+                    <option value="religious">Religious</option>
+                    <option value="encyclopedia">Encyclopedias</option>
+                    <option value="magazines">Magazines</option>
+                    <option value="newspapers">Newspapers</option>
+                    <option value="comicals">Comics</option>
+                    <option value="guides">Guide Books</option>
+                    <option value="manuscripts">Manuscripts</option>
+                    <option value="novels">Novels</option>
+                    <option value="biographies">Biographies</option>
+                    
+                </select>
+            </div>
+        </div>
+        
+          
+        <div class="form-group">
+            <label for="" class="col-sm-4 control-label"></label>
+            <div class="col-sm-6">
+                <button class="btn btn-success" type="submit">Add Book</button>
+            </div>
+        </div>
+    
+    </form>
+    
+
+</div>
+
+</body>
+
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
+
