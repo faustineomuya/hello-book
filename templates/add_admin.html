@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ADMIN</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="../static/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+        <link href="../static/css/materialicons.css" rel="stylesheet">
+        <link href="../static/css/fonts/font-awesome.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <style>
+            body{
+                background-image: url(../static/images/lib.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/home/lib">Hello-Books</a>
+                </div>
+                <ul class="nav navbar-nav pull-right">
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="divider"></li>
+                            <li><a href="/logoutadmin">Logout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <form class="navbar-form" method="post" action="/users/lib">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="user_id">
+                                <div class="input-group-addon">
+                                    <input type="submit" class="glyphicon glyphicon-search">
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+
+                </ul>
+            </div>
+        </nav><br>
+
+        <div class="container">
+            <ul class="list-inline">
+                <li>
+                    <a href="/admn_form" class="btn btn-info"><i class="fas fa-plus"></i>Add Admin</a><br>
+                </li>
+
+            </ul>
+
+
+            <div class="page-header">
+                <h2>Admins</h2>
+            </div>
+            <table class="table">
+                <h4 style="color: #761c19; text-align: center">{{ msg7 }}</h4>
+
+                <thead>
+                    <tr>
+                        <th>Admin ID</th>
+                        <th>Reg_Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                       {{ msg5 }}
+                      {% for row in rows %}
+                        <tr>
+                            <td>{{ row[0] }}</td>
+                            <td>{{ row[1] }}</td>
+                            <td>{{ row[2] }}</td>
+                            <td>{{ row[3] }}</td>
+                            <td>{{ row[4] }}</td>
+
+                            <td>
+                                <ul class="list-inline">
+                                    <li>
+                                        <a href="" class="btn btn-danger">Remove</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                      {% endfor %}
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+
+    <script src="../static/js/jquery-3.3.1.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+
+</html>

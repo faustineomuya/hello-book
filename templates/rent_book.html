@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>rent book</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" media="screen" href="../static/css/style.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="../static/css/materialicons.css" rel="stylesheet">
+        <link href="../static/css/fonts/font-awesome.css" rel="stylesheet">
+        <style>
+        body{
+            background-image: url(../static/images/lib.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="/user/lib">Hello-Books</a>
+                    </div>
+                    <ul class="nav navbar-nav pull-right">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/profile/lib">View Profile</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/log/lib">View Activity Log</a></li>
+                                <li class="divider"></li>
+                                <li><a href="/index/lib">Logout</a></li>
+                            </ul>
+                        </li>
+                        <li>
+{#                            <form class="navbar-form" method="post" action="/rent_book/lib">#}
+{#                                <div class="input-group">#}
+{#                                    <input type="text" class="form-control" placeholder="Search" name="book_number">#}
+{#                                    <div class="input-group-addon">#}
+{#                                        <input type="submit" class="glyphicon glyphicon-search">#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </form>#}
+                        </li>
+
+                    </ul>
+                </div>
+            </nav>
+
+               <center>
+                      <form class="navbar-form" method="post" action="/rentb">
+                                <div class="input-group">
+                                    <h3 value="{{ book_number }}" name="book_number"></h3>
+                                    <input type="text" class="form-control" placeholder="Search" name="book_number" value="{{ book_number }}" readonly >
+                                    <br><br>
+                                    <input type="text" class="form-control" placeholder="Enter User id" name="user_id" >
+                                    <br><br>
+                                    <div>
+                                        <input type="submit" class="btn btn-primary" value="Rent Out" onclick="return confirm('Are you sure you want to rent book '+{{ book_number }})">
+                                    </div>
+
+                                </div>
+                      </form>
+
+                   <h3 style="color: red">{{ msg5 }}</h3>
+
+</center>
+
+
+
+</body>
+</html>
