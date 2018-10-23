@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>USER Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/css/bootstrap.min.css" />
+    <style>
+        body{
+            background-image: url(../static/images/lib.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar" navbar-primary></nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="page-header">
+                <h2>Hello-Books</h2>
+            </div>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    User Login
+                </div>
+                <div class="panel-body">
+                    <h4>{{ msg7 }}</h4>
+                    <form action="/login/lib" method="POST" class="form-horizontal">
+                        <div class="form-group">
+                            <label for="text" class="col-md-4 control-label">Email</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="email" placeholder="Enter Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="password" class="col-md-4 control-label">Password</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" name="password" placeholder="Enter Password">
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-md-offset-4">
+                            <input type="submit" class="btn btn-info">
+                            &nbsp;
+                                <a href="/reset/lib">Forgot Password?</a>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../static/js/jquery-3.3.1.js"></script>
+<script src="../static/js/bootstrap.min.js"></script>
+</html>
+

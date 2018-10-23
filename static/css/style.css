@@ -1,0 +1,8 @@
+.navbar{
+    background-color: #0070ba;
+    border:none;
+}
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a{
+    color:#fff !important;
+    font-weight:bold;
+}
